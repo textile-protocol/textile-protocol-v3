@@ -1,0 +1,27 @@
+# Foundry config for Textile swap contracts.
+
+[profile.default]
+src = "contracts"
+out = "forge-out"
+libs = ["lib"]
+allow_paths = ["node_modules"]
+test = "test/foundry/v3/security"
+solc = "0.8.30"
+optimizer = true
+optimizer_runs = 1
+via_ir = true
+bytecode_hash = "none"
+evm_version = "paris"
+
+remappings = [
+  "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+  "forge-std/=lib/forge-std/src/",
+]
+
+[invariant]
+runs = 256
+depth = 32
+fail_on_revert = false
+
+[fuzz]
+runs = 1024

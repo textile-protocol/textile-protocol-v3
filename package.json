@@ -1,0 +1,49 @@
+{
+  "name": "@textile/swap-contracts",
+  "version": "3.0.0",
+  "private": false,
+  "description": "Textile swap execution contracts for the filler network.",
+  "license": "BUSL-1.1",
+  "type": "commonjs",
+  "scripts": {
+    "compile": "hardhat --config hardhat.config.v3.ts compile",
+    "test:v3": "hardhat --config hardhat.config.v3.ts test test/v3/FillerReactor/deploy.test.ts test/v3/FillerReactor/SellFirstFeeController.test.ts",
+    "test:foundry:v3": "forge test --match-path 'test/foundry/v3/security/SellFirstFeeControllerAuditFindings.t.sol'",
+    "coverage:v3": "SOLIDITY_COVERAGE=true hardhat --config hardhat.config.v3.ts coverage --solcoverjs ./.solcover.v3.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "2.0.8",
+    "@nomicfoundation/hardhat-ethers": "3.0.8",
+    "@nomicfoundation/hardhat-ignition": "0.15.10",
+    "@nomicfoundation/hardhat-ignition-viem": "0.15.10",
+    "@nomicfoundation/hardhat-network-helpers": "1.0.12",
+    "@nomicfoundation/hardhat-toolbox-viem": "3.0.0",
+    "@nomicfoundation/hardhat-verify": "2.0.13",
+    "@nomicfoundation/hardhat-viem": "2.0.6",
+    "@openzeppelin/contracts": "5.4.0",
+    "@openzeppelin/hardhat-upgrades": "3.9.0",
+    "@nomicfoundation/ignition-core": "0.15.10",
+    "@typechain/ethers-v6": "0.5.1",
+    "@typechain/hardhat": "9.1.0",
+    "@types/chai": "4.3.20",
+    "@types/chai-as-promised": "8.0.2",
+    "@types/mocha": "10.0.10",
+    "@types/node": "20.17.43",
+    "chai": "4.5.0",
+    "dotenv": "16.5.0",
+    "ethers": "6.13.5",
+    "hardhat": "2.24.0",
+    "hardhat-gas-reporter": "2.2.2",
+    "prb-math": "2.4.3",
+    "prompt": "1.3.0",
+    "solidity-coverage": "0.8.14",
+    "ts-node": "10.9.2",
+    "typechain": "8.3.2",
+    "typescript": "5.9.3",
+    "viem": "2.39.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "yarn@4.4.0"
+}
