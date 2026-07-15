@@ -13,10 +13,10 @@ safety puts users at direct risk.
 
 Report privately through one of:
 
-- **GitHub private vulnerability reporting** — use the "Report a vulnerability"
-  button on the [Security tab](https://github.com/textile-protocol/textile-contracts-v3/security).
-  This is the preferred channel.
-- **Email** — security@textilecredit.com <!-- TODO: confirm this is a monitored inbox -->
+- **Email** — security@textilecredit.com. This is a monitored inbox and the
+  reliable way to reach us.
+- **GitHub private vulnerability reporting** — if enabled on this repo, use the
+  "Report a vulnerability" button on the [Security tab](https://github.com/textile-protocol/textile-contracts-v3/security).
 
 Please include:
 
