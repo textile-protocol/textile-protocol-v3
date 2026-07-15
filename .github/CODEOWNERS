@@ -1,0 +1,12 @@
+# CODEOWNERS for textile-contracts-v3 (public mirror).
+#
+# Source of truth: textile-monorepo at
+# packages/protocol/public-repo/.github/CODEOWNERS. This file is synced into the
+# public repo by .github/workflows/sync-swap-contracts.yml — do NOT edit it here
+# in the public repo, changes will be overwritten on the next sync.
+#
+# The main branch ruleset requires code-owner review, so every file needs an
+# owner with push access or that requirement can never be satisfied.
+# Swap @bnolens for an org team (e.g. @textile-protocol/contracts) once one exists.
+
+* @bnolens
